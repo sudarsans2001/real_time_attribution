@@ -12,3 +12,6 @@ Created architecture sketch showing GA4 → dbt → BigQuery → Looker Studio a
 
 ## Entry 4 – <01:31AM>
 Installed dbt-bigquery and initialized dbt project `attribution_project` using dataset `attribution_pipeline`.
+
+## Entry 5 – <02:26AM>
+Configured dbt BigQuery profile and verified connection using `dbt debug`.

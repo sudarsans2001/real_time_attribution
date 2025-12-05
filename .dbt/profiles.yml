@@ -1,0 +1,10 @@
+attribution_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: dbtprojects1
+      dataset: attribution_pipeline
+      threads: 8
+      location: US
