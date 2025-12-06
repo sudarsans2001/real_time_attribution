@@ -1,0 +1,9 @@
+version: 2
+
+models:  
+  - name: mart_first_click
+    description: "First-click attribution model per session."
+    columns:
+      - name: source
+        tests:
+          - not_null
