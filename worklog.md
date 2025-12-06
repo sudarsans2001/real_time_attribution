@@ -25,8 +25,13 @@ Implemented int_sessions model using 30-minute inactivity-based sessionization.
 Added test file for session_number(not_null). Ran dbt run + test successfully.
 
 ## Entry 8– <02:32PM>
-Added mart_last_click using descending timestamp rank. Verified outputs.
+Implemented mart_first_click and mart_last_click using descending timestamp rank. Verified outputs.
 
 ## Entry 9 – <07-12-2025 12:18PM>
 Attempted streaming insert via insert_rows_json but BigQuery Sandbox blocked it.
 Switched to load_table_from_json which is allowed. Batch loads still achieve near real-time updates.
+
+## Entry 10– <01:59AM>
+Added Looker Studio dashboard. Connected first click and last click tables.
+Built scorecards, 14-day trend charts, and channel breakdowns.
+Set up live streaming panel using streaming_events table with 1-minute refresh.

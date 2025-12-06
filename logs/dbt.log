@@ -490,3 +490,35 @@ There are 1 unused configuration paths:
 [0m23:59:33.952940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA53032290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA512000D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA4D00D450>]}
 [0m23:59:33.953939 [debug] [MainThread]: Flushing usage events
 [0m23:59:35.281947 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:39:12.216050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE00197C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE001DA950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE001D9CD0>]}
+
+
+============================== 00:39:12.225009 | a214b20f-377d-49f1-a596-02cc9321b845 ==============================
+[0m00:39:12.225009 [info ] [MainThread]: Running with dbt=1.11.0-rc2
+[0m00:39:12.227010 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\sudar\\.dbt', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\sudar\\Downloads\\real_time_attribution\\logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select mart_first_click', 'printer_width': '80', 'target_path': 'None'}
+[0m00:39:24.492446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a214b20f-377d-49f1-a596-02cc9321b845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1ED99A90>]}
+[0m00:39:24.581942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a214b20f-377d-49f1-a596-02cc9321b845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE7AEF0A90>]}
+[0m00:39:24.583942 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m00:39:25.693454 [debug] [MainThread]: checksum: f420ac8df49db4abf21b04814d8cfdc71f6e486d41e3092ed54ec7aa440e7a3c, vars: {}, profile: , target: , version: 1.11.0rc2
+[0m00:39:25.845829 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:39:25.846830 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:39:25.847802 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:39:25.848966 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.attribution_project.example
+[0m00:39:25.855605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a214b20f-377d-49f1-a596-02cc9321b845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE20412C10>]}
+[0m00:39:25.914666 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m00:39:25.917663 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m00:39:25.960691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a214b20f-377d-49f1-a596-02cc9321b845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1EDD3F90>]}
+[0m00:39:25.961692 [info ] [MainThread]: Found 520 macros
+[0m00:39:25.962691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a214b20f-377d-49f1-a596-02cc9321b845', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1EEE5B90>]}
+[0m00:39:25.964101 [warn ] [MainThread]: The selection criterion 'mart_first_click' does not match any enabled nodes
+[0m00:39:25.966100 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:39:25.969095 [debug] [MainThread]: Command end result
+[0m00:39:26.003344 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m00:39:26.009386 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m00:39:26.015498 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\sudar\Downloads\real_time_attribution\target\run_results.json
+[0m00:39:26.017433 [debug] [MainThread]: Command `dbt run` succeeded at 00:39:26.017433 after 13.94 seconds
+[0m00:39:26.017976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE0018F3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE0018EE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE0018E950>]}
+[0m00:39:26.018983 [debug] [MainThread]: Flushing usage events
+[0m00:39:27.095425 [debug] [MainThread]: An error was encountered while trying to flush usage events

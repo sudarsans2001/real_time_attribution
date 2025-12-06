@@ -27,3 +27,17 @@ event_id is unique it serves as a  dedupe key here. BigQuery streaming inserts t
 BigQuery streaming API takes 1–3 seconds typical
 
 Perfect for “near realtime” dashboard queries
+
+## Flow
+stg_ga4_events → int_sessions → mart_first_click
+                                  → mart_last_click
+
+## Realtime Dashboard
+
+The dashboard includes:
+1. First vs Last Click session totals (scorecards)
+2. 14-day trendline for both attribution models (time series)
+3. Channel breakdown (bar chart)
+4. Live event feed sourced from streaming_events table (auto-refresh: 1 minute)
+
+The dashboard is built using Google Looker Studio and connected directly to bigQuery and attached the looker report.

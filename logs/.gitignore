@@ -1,0 +1,10 @@
+
+target/
+logs/
+
+
+.DS_Store
+*.log
+
+
+looker_report/
