@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: int_sessions
+    description: "Sessionized event stream using 30-minute inactivity window."
+    columns:
+      - name: session_number
+        tests:
+          - not_null
