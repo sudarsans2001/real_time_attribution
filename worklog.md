@@ -28,4 +28,5 @@ Added test file for session_number(not_null). Ran dbt run + test successfully.
 Added mart_last_click using descending timestamp rank. Verified outputs.
 
 ## Entry 9 – <07-12-2025 12:18PM>
-Created streaming_events table and wrote streaming_demo.py to generate 10 events.
+Attempted streaming insert via insert_rows_json but BigQuery Sandbox blocked it.
+Switched to load_table_from_json which is allowed. Batch loads still achieve near real-time updates.
