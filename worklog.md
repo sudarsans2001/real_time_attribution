@@ -15,3 +15,7 @@ Installed dbt-bigquery and initialized dbt project `attribution_project` using d
 
 ## Entry 5 – <02:26AM>
 Configured dbt BigQuery profile and verified connection using `dbt debug`.
+
+## Entry 6 – <01:18PM>
+Implemented `stg_ga4_events` model reading from GA4 public dataset.
+Added basic tests (not_null) for key columns and ran dbt run + test

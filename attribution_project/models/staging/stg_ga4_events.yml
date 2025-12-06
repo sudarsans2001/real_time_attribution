@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_ga4_events
+    description: "Staging model over GA4 public ecommerce events."
+    columns:
+      - name: event_timestamp
+        tests:
+          - not_null
+      - name: user_pseudo_id
+        tests:
+          - not_null
+      - name: source
+        tests:
+          - not_null

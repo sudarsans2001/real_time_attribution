@@ -331,3 +331,66 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m02:25:29.784182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A621C612D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A627B95D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A625C73AD0>]}
 [0m02:25:29.785179 [debug] [MainThread]: Flushing usage events
 [0m02:25:34.110587 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:12:41.298818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7A97290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7AD9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7ADA5D0>]}
+
+
+============================== 13:12:41.347896 | ba72ee1c-5b75-4586-81e8-da3c7d7ab53c ==============================
+[0m13:12:41.347896 [info ] [MainThread]: Running with dbt=1.11.0-rc2
+[0m13:12:41.348859 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_ga4_events', 'printer_width': '80', 'profiles_dir': 'C:\\Users\\sudar\\.dbt', 'warn_error': 'None', 'log_path': 'C:\\Users\\sudar\\Downloads\\real_time_attribution\\logs', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m13:13:43.133048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017896E43650>]}
+[0m13:13:43.247718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F28AF090>]}
+[0m13:13:43.248719 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m13:13:44.756563 [debug] [MainThread]: checksum: f420ac8df49db4abf21b04814d8cfdc71f6e486d41e3092ed54ec7aa440e7a3c, vars: {}, profile: , target: , version: 1.11.0rc2
+[0m13:13:44.758616 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:13:44.759573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017896F1A390>]}
+[0m13:13:49.243870 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.attribution_project.example
+[0m13:13:49.250198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001789837BB10>]}
+[0m13:13:49.310333 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m13:13:49.313953 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m13:13:49.751894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017898550290>]}
+[0m13:13:49.752916 [info ] [MainThread]: Found 520 macros
+[0m13:13:49.754896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba72ee1c-5b75-4586-81e8-da3c7d7ab53c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7A8FA50>]}
+[0m13:13:49.756929 [warn ] [MainThread]: The selection criterion 'stg_ga4_events' does not match any enabled nodes
+[0m13:13:49.758948 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:13:49.761317 [debug] [MainThread]: Command end result
+[0m13:13:49.811971 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m13:13:49.815978 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m13:13:49.822262 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\sudar\Downloads\real_time_attribution\target\run_results.json
+[0m13:13:49.827067 [debug] [MainThread]: Command `dbt run` succeeded at 13:13:49.825633 after 68.69 seconds
+[0m13:13:49.828085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7B302D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F7B32390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178F1B5D490>]}
+[0m13:13:49.830241 [debug] [MainThread]: Flushing usage events
+[0m13:13:50.854555 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:34.421475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F087BA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F08ACE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F59A7C50>]}
+
+
+============================== 13:14:34.428223 | f2d52b45-f897-4b3f-b005-aa5aa022456b ==============================
+[0m13:14:34.428223 [info ] [MainThread]: Running with dbt=1.11.0-rc2
+[0m13:14:34.429343 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\sudar\\.dbt', 'target_path': 'None', 'use_colors': 'True', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\sudar\\Downloads\\real_time_attribution\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --select staging/stg_ga4_events', 'printer_width': '80', 'write_json': 'True'}
+[0m13:14:41.824147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2d52b45-f897-4b3f-b005-aa5aa022456b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D594D9E310>]}
+[0m13:14:41.916084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f2d52b45-f897-4b3f-b005-aa5aa022456b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F08AE750>]}
+[0m13:14:41.917047 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m13:14:42.975695 [debug] [MainThread]: checksum: f420ac8df49db4abf21b04814d8cfdc71f6e486d41e3092ed54ec7aa440e7a3c, vars: {}, profile: , target: , version: 1.11.0rc2
+[0m13:14:43.133850 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:14:43.134849 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:14:43.134849 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:14:43.136851 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.attribution_project.example
+[0m13:14:43.142803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f2d52b45-f897-4b3f-b005-aa5aa022456b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F5321C50>]}
+[0m13:14:43.220535 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m13:14:43.228250 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m13:14:43.273110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f2d52b45-f897-4b3f-b005-aa5aa022456b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F3BCA510>]}
+[0m13:14:43.274112 [info ] [MainThread]: Found 520 macros
+[0m13:14:43.276338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f2d52b45-f897-4b3f-b005-aa5aa022456b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5963ADED0>]}
+[0m13:14:43.278776 [warn ] [MainThread]: The selection criterion 'staging/stg_ga4_events' does not match any enabled nodes
+[0m13:14:43.282156 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:14:43.287951 [debug] [MainThread]: Command end result
+[0m13:14:43.338240 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sudar\Downloads\real_time_attribution\target\manifest.json
+[0m13:14:43.343746 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sudar\Downloads\real_time_attribution\target\semantic_manifest.json
+[0m13:14:43.348464 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\sudar\Downloads\real_time_attribution\target\run_results.json
+[0m13:14:43.350975 [debug] [MainThread]: Command `dbt run` succeeded at 13:14:43.350975 after 9.04 seconds
+[0m13:14:43.350975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F5ADDA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5F5B32610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5EFB5D390>]}
+[0m13:14:43.351987 [debug] [MainThread]: Flushing usage events
+[0m13:14:44.400113 [debug] [MainThread]: An error was encountered while trying to flush usage events
