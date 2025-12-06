@@ -19,3 +19,13 @@ Configured dbt BigQuery profile and verified connection using `dbt debug`.
 ## Entry 6 – <01:18PM>
 Implemented `stg_ga4_events` model reading from GA4 public dataset.
 Added basic tests (not_null) for key columns and ran dbt run + test
+
+## Entry 7 – <01:45PM>
+Implemented int_sessions model using 30-minute inactivity-based sessionization.
+Added test file for session_number(not_null). Ran dbt run + test successfully.
+
+## Entry 8– <02:32PM>
+Added mart_last_click using descending timestamp rank. Verified outputs.
+
+## Entry 9 – <07-12-2025 12:18PM>
+Created streaming_events table and wrote streaming_demo.py to generate 10 events.

@@ -25,4 +25,4 @@ select
     campaign,
     event_ts as last_event_ts
 from ranked
-where rn = 1;
+where rn = 1
