@@ -5,7 +5,7 @@ import random
 
 client = bigquery.Client()
 
-table_id = "dbtprojects1.attribution_pipeline.streaming_events"
+table_id = "project_id.attribution_pipeline.streaming_events"
 
 sources = [
     ("google", "cpc", "search_summer"),
