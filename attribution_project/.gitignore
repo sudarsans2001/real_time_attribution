@@ -2,3 +2,14 @@
 target/
 dbt_packages/
 logs/
+
+profiles.yml
+*.json
+*.key
+
+
+.DS_Store
+
+
+venv/
+ENV/
